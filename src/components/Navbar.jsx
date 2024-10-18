@@ -10,7 +10,7 @@ const Navbar = () => {
   const routes = ["/", "/mens", "/womens", "/kids"];
 
   return (
-    <div className="flex justify-around p-6 shadow-[0_1px_3px_-2px_black]">
+    <div className="flex justify-around p-4 shadow-[0_1px_3px_-2px_black]">
       <div className="logo flex items-center gap-[10px]">
         <img src={logo} alt="" />
         <p className="text-[#171717] text-[38px] font-semibold">SHOPPER</p>
