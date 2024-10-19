@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const Item = (props) => {
   return (
-    <div className="w-[350px] hover:scale-[1.05] hover:duration-[0.6s] cursor-pointer">
+    <div className="w-[300px] hover:scale-[1.05] hover:duration-[0.6s] cursor-pointer">
         <img className="" src={props.image} alt="" />
         <p className="mx-[0px] my-[6px]">{props.name}</p>
         <div className="price flex gap-5">
