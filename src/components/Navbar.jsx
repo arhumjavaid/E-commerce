@@ -4,17 +4,18 @@ import logo from "../assets/logo.png";
 import cart_icon from "../assets/cart_icon.png";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ menu, setMenu }) => {
   const navigate = useNavigate();
-  const [menu, setMenu] = useState(
-    localStorage.getItem("activeMenu") || "shop"
-  );
+  // const [menu, setMenu] = useState(
+  //   localStorage.getItem("activeMenu") || "shop"
+  // );
   const nav = ["Shop", "Men", "Women", "Kids"];
   const routes = ["/", "/mens", "/womens", "/kids"];
 
-  useEffect(() => {
-    localStorage.setItem("activeMenu", menu);
-  }, [menu]);
+  // useEffect(() => {
+  //   localStorage.setItem("activeMenu", menu);
+  // }, [menu]);
 
   return (
     <div className="flex justify-around p-4 shadow-[0_1px_3px_-2px_black]">
