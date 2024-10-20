@@ -18,7 +18,13 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-around p-4 shadow-[0_1px_3px_-2px_black]">
-      <div className="logo flex items-center gap-[10px]">
+      <div
+        onClick={() => {
+          setMenu("Shop");
+          navigate("/");
+        }}
+        className="logo flex items-center gap-[10px] cursor-pointer "
+      >
         <img src={logo} alt="" />
         <p className="text-[#171717] text-[38px] font-semibold">SHOPPER</p>
       </div>
@@ -34,7 +40,7 @@ const Navbar = () => {
               className="flex flex-col items-center justify-center cursor-pointer gap-1"
             >
               {item}
-              {menu === nav[index] && (
+              {menu === item && (
                 <hr className="border-none w-[80%] h-[3px] rounded-xl bg-[#FF4141]" />
               )}
             </li>

@@ -5,7 +5,7 @@ const NewCollection = () => {
     <div className=" flex flex-col items-center gap-[10px] mb-[100px]">
       <h1 className="text-[#171717] text-5xl font-[500]">NEW COLLECTIONS</h1>
       <hr className="w-[200px] border-y-[2px] border-[#616161] rounded-[10px] " />
-      <div className="collections grid grid-cols-4 mt-[50px] gap-[30px]">
+      <div className="collections grid md:grid-cols-4 mt-[50px] gap-[30px] sm:grid-cols-2">
         {new_collection.map((item, index) => {
           return (
             <Item
